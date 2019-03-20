@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Tip Calculator</title>
+    <link href="css/master.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+  </head>
+  <script src="js/scripts.js"></script>
+  <header>
+    <h1>Tip Calculator</h1>
+  </header>
+    <div id="main">
+    <div class="column1">
+      <h2>Tipping Guidelines</h2>
+      <table>
+        <tr>
+          <td>
+            <ul>Restaurant
+              <li>High: >20%</li>
+              <li>Average: 17-20%</li>
+              <li>Low: <17% </li>
+            </ul>
+          </td>
+          <td>
+            <ul>Food Delivery
+              <li>High: $4 or 20%</li>
+              <li>Average: $2 or $3</li>
+              <li>Low: >$2</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <ul>Ride Service
+              <li>High: >18%</li>
+              <li>Average: 10-18%</li>
+              <li>Low: <10%</li>
+            </ul>
+          </td>
+          <td>
+            <ul>Salon/Barbershop
+              <li>High: >25%</li>
+              <li>Average: 15-25%</li>
+              <li>Low: <15%</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      </div>
+    <div class="column2">
+    <div id="calculator">
+    <form action="javascript:void(calculateTip())">
+        <p id="textField"> Amount: $<input id="bill" type="text"></p>
+        <br/>
+        <input id="button" type="submit" value="Calculate 20%">
+        <br/>
+        <p id="results">Tip:  <span id="tip"></span>
+        <br/>
+        Total: <span id="total"></span>
+        </p>
+    </form>
