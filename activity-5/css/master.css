@@ -1,0 +1,44 @@
+html{
+
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  max-width: 700px;
+  min-width: 700px;
+  justify-content: center;
+}
+
+#banner{
+  margin:auto;
+  margin-top: 30px;
+}
+img{
+  margin: auto;
+  max-width: 700px;
+}
+
+.byline{
+  font-size: 14px;
+  color: gray;
+  margin-top:0;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  margin-bottom: 10px;
+}
+
+h2{
+  font-weight: bold;
+}
+
+.package{
+  margin: auto;
+  max-width: 700px;
+  justify-content: center;
+}
