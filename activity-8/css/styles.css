@@ -2,21 +2,25 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Open Sans', sans-serif;
-  color: #555555;
+  font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(to right, #1F2833 , #0B0C10);
   margin: 0;
 }
 
 header {
   display: flex;
   padding: 5px;
-  color: #efefef;
-  background-color: #2d2d2d;
-  border-bottom: solid 1px #000;
+  color: #66FCF1;
+  font-size: 1.5em;
+  background-color: transparent;
+  border-bottom: solid 1px #0B0C10;
 }
 
 header .header-title {
+  margin-left: 30px;
   display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: #45A29E;
 }
 
 header .header-menu {
@@ -42,7 +46,6 @@ main #display-content {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.75);
 }
 
 #modal-backdrop.visible {
@@ -53,11 +56,10 @@ main #display-content {
   display: none;
   position: absolute;
   padding: 10px;
-  border: solid 1px #555;
-  background-color: #fff;
+  border: solid 1px #0B0C10;
   z-index: 99999;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -72,13 +74,40 @@ main #display-content {
   height: 300px;
 }
 
+.modal{
+    background-color: #1F2833;
+}
+
+.modal h2{
+  font-weight: 200;
+  color: #66FCF1;
+}
+
+button{
+  background-color: transparent;
+  padding: 10px 15px 10px 15px;
+  border: 1px solid #45A29E;
+  color: #C5C6C7;
+  font-family: 'Raleway', sans-serif;
+}
+
+#new-button{
+  margin-right: 30px;
+}
+
 #edit-title-text {
   width: 300px;
   margin-bottom: 5px;
   box-sizing: border-box;
+  background-color: #C5C6C7;
 }
 
 #edit-content-text {
   width: 100%;
   box-sizing: border-box;
+  background-color:#C5C6C7;
+}
+
+#display-content{
+  color: #C5C6C7;
 }
